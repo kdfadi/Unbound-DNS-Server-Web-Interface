@@ -68,7 +68,7 @@ For logging permission you can solve via this [link](https://b4d.sablun.org/blog
 #Mysql> flush privileges;
 #Mysql> use unbound;
 #Mysql> create table users(
-   id INT NOT NULL AUTO_INCREMENT,
+   id INT AUTO_INCREMENT primary key NOT NULL,
    username VARCHAR(100) NOT NULL,
    password VARCHAR(255) NOT NULL);
 #Mysql> insert into users (id, username, password) values (1,'dnsadmin', '$2y$10$Ud3yKKJZ8iYPXoDsiSBGE.ONBztPWF6EEUEbnNSaaPheEjWqAytRy');
